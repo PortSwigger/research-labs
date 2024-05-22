@@ -22,4 +22,4 @@ docker-compose up
 Visit page http://127.0.0.1:4444/ to get access to the application
 
 ### Links
-- [Blog post](https://portswigger.net/research)
+- Blog post page: [Introducing SignSaboteur: forge signed web tokens with ease](https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease)
