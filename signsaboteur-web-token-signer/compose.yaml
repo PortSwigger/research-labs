@@ -3,7 +3,7 @@ services:
     image: nginx:latest
     container_name: nginx_container
     ports:
-      - '4444:4444'
+      - '127.0.0.1:4444:4444'
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     restart: on-failure
