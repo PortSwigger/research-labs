@@ -1,0 +1,49 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx_container
+    ports:
+      - '4444:4444'
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    restart: on-failure
+    networks:
+      - frontnet
+    depends_on:
+      - backend
+      - flask
+      - express
+
+
+  backend:
+    build:
+      context: backend
+      target: backend
+    stop_signal: SIGINT
+    # volumes:
+    #   - ./backend:/code
+    restart: on-failure
+    networks:
+      - frontnet
+
+  flask:
+    build:
+      context: labs/flask
+      target: flask
+    stop_signal: SIGINT
+    restart: on-failure
+    networks:
+      - frontnet
+
+  express:
+    build:
+      context: labs/express
+      target: express
+    stop_signal: SIGINT
+    restart: on-failure
+    networks:
+      - frontnet
+
+      
+networks:
+  frontnet:
