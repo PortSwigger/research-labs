@@ -2,7 +2,7 @@
 This repository contains a number of intentionally vulnerable applications that you can use to explore vulnerabilities found by [PortSwigger Research](https://portswigger.net/research). 
 
 
-## Table of content
+## Table of contents
 
 - [SignSaboteur Web token signer](/signsaboteur-web-token-signer/)
 
