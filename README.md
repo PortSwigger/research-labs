@@ -1,6 +1,7 @@
 # Researcher's labs
 This repository contains a number of intentionally vulnerable applications that you can use to explore vulnerabilities found by [PortSwigger Research](https://portswigger.net/research). 
 
+Note that you can find many free online labs designed by PortSwigger Research in the [Web Security Academy](https://portswigger.net/web-security).
 
 ## Table of contents
 
