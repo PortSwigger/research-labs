@@ -1,6 +1,8 @@
-### SignSaboteur web token signer
+### Vulnerable signed web token lab for SignSaboteur
 
-That folder contains signed web tokens laboratory. It is designed to teach you how to identify, forge and exploit security misconfigurations. That lab has two challenges: Flask login page and Express application with cookie-session middleware. Each application has two users: admin and test. You can login into the test account with credentials test:test. Flag is admin user password. Password is randomly generated each time the docker container starts. 
+This lab has two challenges to help you practise using SignSaboteur. The first challenge uses Flask, and the second uses ExpressJS. 
+
+To solve each challenge, log in using `test:test` and obtain the `admin` user's password.
 
 You will need following tools to get started:
 - [Burp Suite](https://portswigger.net/burp/pro)
