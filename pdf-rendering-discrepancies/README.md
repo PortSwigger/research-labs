@@ -12,7 +12,7 @@ cd ./pdf-rendering-discrepancies
 open invoice.pdf 
 ```
 
-You can change the file content by modifying the fields list in the [App.java:24](/app/src/main/java/net/portswigger/App.java) file. 
+You can change the file content by modifying the fields list in the [App.java:24](/pdf-rendering-discrepancies/app/src/main/java/net/portswigger/App.java) file. 
 ```java
 List<String[]> fields = List.of(
         // Input fields: Title, size, text field, widget annotation
