@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  terminal-app:
+    build: .
+    ports:
+      - "127.0.0.1:4444:4444"
+    volumes:
+      - .:/app
+      - /app/node_modules 
+    environment:
+      - NODE_ENV=development

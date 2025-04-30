@@ -1,0 +1,19 @@
+{
+  "name": "control-character-command-injection",
+  "version": "1.0.0",
+  "description": "Node pty command injection minimal proof of concept",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node-pty"
+  ],
+  "author": "d0ge",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "4.21.2",
+    "node-pty": "1.0.0",
+    "ws": "8.18.1"
+  }
+}
