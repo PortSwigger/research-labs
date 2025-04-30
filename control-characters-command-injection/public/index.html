@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ASCII Control Characters command injection PoC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm/css/xterm.css" />
+  <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
+</head>
+<body>
+  <div style="background: #f4f4f4; padding: 10px 20px; border-bottom: 1px solid #ccc;">
+    To solve the challenge, read the contents of the <code>flag.txt</code> file located in the <code>/app</code> directory.
+  </div>
+  <div id="terminal" style="height: 100vh; width: 100vw;"></div>
+  <script>
+    const socket = new WebSocket('ws://' + location.host);
+    const term = new Terminal();
+    term.open(document.getElementById('terminal'));
+
+    socket.onmessage = ({ data }) => term.write(data);
+
+    term.onData(data => {
+      socket.send(data.trim());
+    });
+  </script>
+</body>
+</html>
+

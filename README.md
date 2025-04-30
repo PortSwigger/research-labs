@@ -7,6 +7,7 @@ Note that you can find many free online labs designed by PortSwigger Research in
 
 - [SignSaboteur Web token signer](/signsaboteur-web-token-signer/)
 - [Browser PDF rendering discrepancies](/pdf-rendering-discrepancies)
+- [ASCII Control Characters command injection](/control-characters-command-injection/)
 
 ## Warning
 Running these labs creates vulnerable websites on your local machine. If you expose these websites to other systems, they may hacked.
