@@ -21,4 +21,4 @@ docker-compose up
 Visit page http://127.0.0.1:4444/ to get access to the application
 
 ## Links
-- Blog post page: [Copy and Pwnd: Leverage ASCII characters to exploit VS Code](https://portswigger.net/research/drag-and-pwnd-leverage-ascii-characters-to-exploit-vs-code)
+- Blog post page: [Drag and Pwnd: Leverage ASCII characters to exploit VS Code](https://portswigger.net/research/drag-and-pwnd-leverage-ascii-characters-to-exploit-vs-code)
