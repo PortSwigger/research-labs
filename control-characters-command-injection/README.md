@@ -2,7 +2,7 @@
 
 This repository contains a small Proof of Concept lab exploring command injection using ASCII control characters.
 
-To solve each challenge, read the contents of the flag.txt file located in the /app directory.
+To solve a challenge, read the contents of the flag.txt file located in the /app directory.
 
 You will need following tools to get started:
 - [Burp Suite](https://portswigger.net/burp/pro)
